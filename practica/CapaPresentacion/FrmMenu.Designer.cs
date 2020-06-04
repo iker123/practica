@@ -54,6 +54,7 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.panelPrincipal.SuspendLayout();
             this.panelSuperior.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).BeginInit();
@@ -101,6 +102,7 @@
             // panelSuperior
             // 
             this.panelSuperior.BackColor = System.Drawing.Color.Red;
+            this.panelSuperior.Controls.Add(this.label1);
             this.panelSuperior.Controls.Add(this.bunifuImageButton4);
             this.panelSuperior.Controls.Add(this.btnMinimizar);
             this.panelSuperior.Controls.Add(this.btnRestaurar);
@@ -500,6 +502,15 @@
             this.bunifuDragControl1.TargetControl = this.panelSuperior;
             this.bunifuDragControl1.Vertical = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(411, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "MI PRIMER COMIC";
+            // 
             // FrmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -513,6 +524,7 @@
             this.Text = "FrmMenu";
             this.panelPrincipal.ResumeLayout(false);
             this.panelSuperior.ResumeLayout(false);
+            this.panelSuperior.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
@@ -551,5 +563,6 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuFlatButton btnUsuarios;
+        private System.Windows.Forms.Label label1;
     }
 }
