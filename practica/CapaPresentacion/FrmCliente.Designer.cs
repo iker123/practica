@@ -52,6 +52,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbCiudadC = new System.Windows.Forms.ComboBox();
             this.btnCiudades = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCerrar)).BeginInit();
             this.SuspendLayout();
@@ -401,12 +402,22 @@
             this.btnCiudades.UseVisualStyleBackColor = false;
             this.btnCiudades.Click += new System.EventHandler(this.btnCiudades_Click);
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(423, 71);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(32, 17);
+            this.label10.TabIndex = 42;
+            this.label10.Text = "2do";
+            // 
             // FrmCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(250)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(645, 460);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.btnCiudades);
             this.Controls.Add(this.cbCiudadC);
             this.Controls.Add(this.btnProfesionales);
@@ -466,5 +477,6 @@
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.ComboBox cbCiudadC;
         private System.Windows.Forms.Button btnCiudades;
+        private System.Windows.Forms.Label label10;
     }
 }
